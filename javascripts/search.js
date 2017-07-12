@@ -1,31 +1,36 @@
 'use strict';
-
+// let reg = require(javas infopane)
 let $ = require('jquery');
 
 let objArray = [];
 let matchSuccesses = [];
 
 $("#testButton").click( function() {
+  matchSuccesses = [];
   $.ajax({
     url: "https://fir-101-143cd.firebaseio.com/attractions.json",
-    success: function(data)
-    {
-    var searchText = document.getElementById("testText").value;
-    var reg = new RegExp(`${searchText}`, "i");
-    objArray.push(data);
-    console.log(reg);
-    objArray[0].forEach( function (name){
-      if (name.name.search(reg) === -1){
-        console.log("nada");
-      }
-      else{
-        matchSuccesses.push(name);
-      }
-    });
-    console.log("successes", matchSuccesses);
-  }
+    success: function(data){
+      var searchText = document.getElementById("testText").value;
+      var reg = new RegExp(`${searchText}`, "i");
+      objArray.push(data);
+      console.log(reg);
+      objArray[0].forEach( function (attraction){
+        if (attraction.name.search(reg) === -1){
+        }
+        else{
+          matchSuccesses.push(attraction);
+        }
+      });
+      console.log("successes", matchSuccesses);
+    }
+  });
 });
-});
+// let attractionsGetter = require ("/accordianFactory.js")
+// function search(reg) {
+
+//   let attractions = attractionsGetter.getAttractions();
+
+// }
 
 // for loop that goes through each attraction in the attraction array
 // compare the names of each tot he regex. for( if( ))
