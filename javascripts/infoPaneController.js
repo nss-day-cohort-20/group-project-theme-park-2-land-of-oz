@@ -1,5 +1,8 @@
+'use strict';
+
 // let $ = require('jquery');
 let accordianFactory = require('./accordianFactory.js');
+let searchResult = require('./search.js');
 
 // give me burger
 accordianFactory.getParkInfo()
