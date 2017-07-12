@@ -41,7 +41,3 @@ $("#testButton").click( function() {
 // regex expression will be the value in the searchbar. all to lowercase. once we have the regex expression to compare
 // for every atraciton in the JSON, compare that regex to the name of the attraction name. if the expressions fails  (nothing)
 // else take results and push to the empty array. append PARENT OBJECT to the array. not attraction. name, but the entire object.
-
-
-
-// Regex comparing name to expression, append parent obj to arr object data, to the template builder
