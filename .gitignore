@@ -1,3 +1,5 @@
 lib/node_modules
 dist/app.js
 lib/bower_components
+css/
+lib/.sass-cache/
