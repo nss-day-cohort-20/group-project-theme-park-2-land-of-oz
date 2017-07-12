@@ -1,7 +1,7 @@
 'use strict';
 
 let $ = require('jquery');
-let fbURL = "https://fir-101-143cd.firebaseio.com";
+let fbURL = "https://fir-101-baf2e.firebaseio.com/";
 
 function getAreas() {
   return new Promise( ( resolve, reject) => {
@@ -52,7 +52,7 @@ module.exports = {getAreas, getAttractions, getAttractionTypes, getParkInfo};
 // 	AJAX CALL FOR ATTRACTION TYPES
 // 	attractions change baised on info from AT
 
-let fbURL = "https://fir-101-143cd.firebaseio.com";
+let fbURL = "https://fir-101-baf2e.firebaseio.com/";
 
 // *DATA returned from attractionTypes gets own VAR
 // for each attraction add type field then POST FB
@@ -69,4 +69,10 @@ function addType(attractions){
 	});
 	console.log("typeArr after ID", );
 };
+
+
+
+
+
+
 
