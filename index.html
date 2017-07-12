@@ -1,51 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="/lib/bower_components/moment/min/moment.min.js"></script>
-	<script type="text/javascript" src="/lib/bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
-	<link rel="stylesheet" type="text/css" href="/lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/lib/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="/lib/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/lib/bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="/lib/bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="/lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/lib/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/lib/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 
-	<title>Land of OZ</title>
+    <title>Land of OZ</title>
 
 </head>
 <body>
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">
-				<img alt="Brand" src="">
-			</a>
-			<div class="row">
-			<div class="navbar-form" role="search">
-					<input type="text" class="form-control" id="testText" placeholder="Search">
-					<button type="submit" class="btn btn-default submitBtn" id="testButton">Submit</button>
-					<div class='input-group date' id='datetimepicker3' placeholder="Search">
-						<span class="input-group-addon">
-							<span class="glyphicon glyphicon-time"></span>
-						</span>
-						<input type='text' id="timeSubmission" class="form-control" />
-					</div>
-					<button type="submit" class="btn btn-default" id="timeSubmit">Submit</button>
-					<script type="text/javascript">
-						$(function () {
-							$('#datetimepicker3').datetimepicker({
-								format: 'LT'
-							});
-						});
-					</script>
-				</div>
-			</div>
-		</nav>
-
-		<nav class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container footer">
-    copyright &copy; 2017
-  </div>
-</nav>
-		<script type="text/javascript" src="/dist/app.js"></script>
-	</body>
-	</html>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="">
+            </a>
+            <div class="row">
+                <form class="navbar-form" role="search">
+                    <input type="text" class="form-control" id="testText" placeholder="Search">
+                    <button type="submit" class="btn btn-default submitBtn" id="testButton">Submit</button>
+                    <div class='input-group date' id='datetimepicker3' placeholder="Search">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
+                        <input type='text' id="timeSubmission" class="form-control" />
+                    </div>
+                    <button type="submit" class="btn btn-default" id="timeSubmit">Submit</button>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker3').datetimepicker({
+                                format: 'LT'
+                            });
+                        });
+                    </script>
+                </form>
+            </div>
+        </nav>
+        <script type="text/javascript" src="/dist/app.js"></script>
+    </body>
+    </html>
