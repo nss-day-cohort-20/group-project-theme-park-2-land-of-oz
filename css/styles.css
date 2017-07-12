@@ -1,0 +1,29 @@
+.center {
+  text-align: center;
+  margin: 0 auto; }
+
+.barSize {
+  width: 500px; }
+
+.navbar-form {
+  width: auto;
+  padding-bottom: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 0; }
+
+.navbar-form .form-control {
+  width: 500px;
+  vertical-align: middle; }
+
+.navbar-brand {
+  margin-right: 300px; }
+
+.submitBtn {
+  margin-right: 150px; }
+
+.footer {
+  text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */
