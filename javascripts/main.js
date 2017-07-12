@@ -18,6 +18,3 @@ searchButton.click(function(){
 	console.log("search button", searchButton);
 	console.log("search master", matched);
 });
-
-
-
