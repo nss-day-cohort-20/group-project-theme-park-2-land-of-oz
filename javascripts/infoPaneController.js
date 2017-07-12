@@ -1,3 +1,5 @@
+"use strict";
+
 // let $ = require('jquery');
 let accordianFactory = require('./accordianFactory.js');
 
