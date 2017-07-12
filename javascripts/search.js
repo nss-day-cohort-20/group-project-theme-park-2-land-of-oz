@@ -41,7 +41,7 @@ let timeMatcher = function(){
         if (attraction.name.search(reg) === -1){
         }
         else{
-          matchSuccesses.push(attraction)
+          matchSuccesses.push(attraction);
         }
       });
       console.log("successes", matchSuccesses);
