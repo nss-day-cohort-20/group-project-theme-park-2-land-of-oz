@@ -52,23 +52,23 @@ module.exports = {getAreas, getAttractions, getAttractionTypes, getParkInfo};
 // 	AJAX CALL FOR ATTRACTION TYPES
 // 	attractions change baised on info from AT
 
-let fbURL = "https://fir-101-baf2e.firebaseio.com/";
+// let fbURL = "https://fir-101-baf2e.firebaseio.com/";
 
-// *DATA returned from attractionTypes gets own VAR
-// for each attraction add type field then POST FB
-// loop through attractions for every item loop through types with filter func- creats new array. returns 1 obj
-// return obj whos id is the same as the type id in current attraction 
-// make type ids equal to name
+// // *DATA returned from attractionTypes gets own VAR
+// // for each attraction add type field then POST FB
+// // loop through attractions for every item loop through types with filter func- creats new array. returns 1 obj
+// // return obj whos id is the same as the type id in current attraction 
+// // make type ids equal to name
 
-newAttractionArr is 
-function addType(attractions){
-	attractions.forEach( (attraction) => {
-		let newAttractionArr = attractionTypes.filter( (type) => {
-			return type.id === attraction.typeId
-		});accordianFactory.getParkInfo
-	});
-	console.log("typeArr after ID", );
-};
+// newAttractionArr is 
+// function addType(attractions){
+// 	attractions.forEach( (attraction) => {
+// 		let newAttractionArr = attractionTypes.filter( (type) => {
+// 			return type.id === attraction.typeId
+// 		});accordianFactory.getParkInfo
+// 	});
+// 	console.log("typeArr after ID", );
+// };
 
 
 
