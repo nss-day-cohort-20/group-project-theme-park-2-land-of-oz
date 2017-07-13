@@ -9,9 +9,6 @@ var times = $("#timeSubmission").val();
 console.log(times);
 });
 
-// add EL on search in html??
-// id text
-
 var searchButton = $("#testButton");
 searchButton.click(function(){
 	let matched = search.searchMatcher();
