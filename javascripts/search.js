@@ -27,26 +27,26 @@ let searchMatcher = function() {
   return matchSuccesses;
 };
 
+// ###:###[ ]AMPM
 
 let timeMatcher = function(){
-  matchSuccesses = [];
+  var matchSuccesses;
   $.ajax({
     url: "https://fir-101-143cd.firebaseio.com/attractions.json",
     success: function(data){
-      var searchText = document.getElementById("timeSubmission").value;
-      var reg = new RegExp(`${searchText}`, "i");
-      objArray.push(data);
-      console.log(reg);
-      objArray[0].forEach( function (attraction){
-        if (attraction.name.search(reg) === -1){
-        }
-        else{
-          matchSuccesses.push(attraction);
-        }
-      });
-      console.log("successes", matchSuccesses);
+
+      var searchTime = document.getElementById("timeSubmission").value; 
+      if (searchTime.match( /(\d{1,2}:\d{2}(\s*[AP]M))/g) ) {
+        // return searchTime.replace(/\s/g, '');
+         matchSuccesses = searchTime.replace(/\s/g, '');
+         // console.log("mat", matchSuccesses);
+      }
+      else{
+        console.log("outta time");
+      }
     }
   });
+        return matchSuccesses;
 };
 
-module.exports = {searchMatcher};
+module.exports = {searchMatcher, timeMatcher};
