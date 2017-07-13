@@ -1,6 +1,6 @@
 'use strict';
 
-// let $ = require('jquery');
+let $ = require('jquery');
 let accordianFactory = require('./accordianFactory.js');
 let search = require('./search.js');
 let builder = require('./templateBuilder.js');
