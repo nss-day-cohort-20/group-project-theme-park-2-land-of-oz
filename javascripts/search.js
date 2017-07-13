@@ -34,7 +34,7 @@ let timeMatcher = function(){
     url: "https://fir-101-143cd.firebaseio.com/attractions.json",
     success: function(data){
 
-      var searchTime = document.getElementById("timeSubmission").value; 
+      var searchTime = document.getElementById("timeSubmission").value;
       if (searchTime.match( /(\d{1,2}:\d{2}(\s*[AP]M))/g) ) {
          spaceRemoval = searchTime.replace(/\s/g, '');
          console.log("mat", spaceRemoval);
