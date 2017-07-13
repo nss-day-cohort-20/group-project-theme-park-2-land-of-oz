@@ -1,34 +1,161 @@
-.center {
-    text-align: center;
-    margin: 0 auto;
+body {
+	font-family: 'Montserrat', sans-serif;
 }
 
-.barSize {
-    width: 500px;
+/********************************************
+                  Nav/Foot
+*********************************************/
+
+.navbar-brand {
+padding-left: 12%;
 }
 
-.navbar-form {
-    width: auto;
-    padding-bottom: 0;
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    font-size: 0;
+.navContainer {
+	margin-left: 12%;
+}
+
+.dateContainer {
+	margin-left: 28%;
+}
+
+.dateText {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.searchText {
+	margin-right: 2%;
+	margin-left: 38%;
+	margin-top: 4.5%;
+	margin-bottom: 1%;
+}
+
+.nav {
+	-webkit-box-shadow: 0 8px 6px -6px #999;
+	-moz-box-shadow: 0 8px 6px -6px #999;
+	box-shadow: 0 8px 6px -6px #999;
+	background-color: #6a8fbb;
+	height: 170px;
+	font-size: 0;
 }
 
 .navbar-form .form-control {
-    width: 500px;
-    vertical-align: middle;
-}
-.navbar-brand {
-    margin-right: 300px;
-}
-
-.submitBtn {
-    margin-right: 150px;
+	width: 90%;
 }
 
 .footer {
 	text-align: center;
 	margin: 0 auto;
+}
+
+.navbar-default{
+	background-color: #6abb6d;
+	background-image: none;
+}
+
+.searchBox {
+	text-align: center;
+}
+
+/********************************************
+                  Info Pane
+*********************************************/
+
+.infoPane {
+	border-right: 3px solid #bb6a8f;
+	min-height: 400px;
+	margin-right: 7%;
+	margin-left: -30px;
+}
+
+.infoPaneText {
+	padding-right: 30px;
+	margin-left: -20%;
+	max-height: 515px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.infoPaneHeader {
+	text-align: center;
+	padding-right: 30%;
+	margin-bottom: 15%;
+}
+
+.accordianTitle {
+	text-align: center;
+	color: #6a8fbb;
+}
+
+.panel-heading:hover {
+	background-color: #6abb6d;
+}
+
+.panel-heading:hover h4{
+	color: white;
+}
+
+.panel-default>.panel-heading {
+	background-image: none;
+}
+a:focus, a:hover {
+	text-decoration: none;
+}
+
+/********************************************
+                  Area Grid
+*********************************************/
+
+.area1 {
+	background-color: #730217;
+	min-height: 165px;
+}
+.area2 {
+	background-color: #D15530;
+	min-height: 165px;
+}
+.area3 {
+	background-color: #A37849;
+	min-height: 165px;
+}
+.area4 {
+	background-color: #2594D9;
+	min-height: 165px;
+}
+.area5 {
+	background-color: #E73C81;
+	min-height: 165px;
+}
+.area6 {
+	background-color: #3E4D8C;
+	min-height: 165px;
+}
+.area7 {
+	background-color: #F2CF53;
+	min-height: 165px;
+}
+.area8 {
+	background-color: #AAAAAA;
+	min-height: 165px;
+}
+
+.map {
+	min-height: 400px;
+}
+
+.attractionsGrid {
+	-webkit-box-shadow: 0 8px 6px -3px #999;
+	-moz-box-shadow: 0 8px 3px -3px #999;
+	box-shadow: 0 8px 3px -3px #999;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+.feature {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-bottom: 20%;
 }

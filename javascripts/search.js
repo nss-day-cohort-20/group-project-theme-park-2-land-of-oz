@@ -24,6 +24,7 @@ let searchMatcher = function() {
       console.log("successes", matchSuccesses);
     }
   });
+  return matchSuccesses;
 };
 
 
