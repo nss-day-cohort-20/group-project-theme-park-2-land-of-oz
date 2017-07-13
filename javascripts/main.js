@@ -22,5 +22,5 @@ searchButton.click(function(){
 var testButton = $("#timeSubmit");
 testButton.click(function(){
 	let matched = search.timeMatcher();
-	console.log("matched", matched);
+	return matched;
 });

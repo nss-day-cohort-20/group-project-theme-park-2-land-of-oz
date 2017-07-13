@@ -27,19 +27,17 @@ let searchMatcher = function() {
   return matchSuccesses;
 };
 
-// ###:###[ ]AMPM
-
 let timeMatcher = function(){
-  var matchSuccesses;
+  var spaceRemoval;
+  matchSuccesses = [];
   $.ajax({
     url: "https://fir-101-143cd.firebaseio.com/attractions.json",
     success: function(data){
 
       var searchTime = document.getElementById("timeSubmission").value; 
       if (searchTime.match( /(\d{1,2}:\d{2}(\s*[AP]M))/g) ) {
-        // return searchTime.replace(/\s/g, '');
-         matchSuccesses = searchTime.replace(/\s/g, '');
-         // console.log("mat", matchSuccesses);
+         spaceRemoval = searchTime.replace(/\s/g, '');
+         console.log("mat", spaceRemoval);
       }
       else{
         console.log("outta time");
