@@ -47,9 +47,8 @@ let timeMatcher = function(){
         return matchSuccesses;
 };
 
-<<<<<<< Updated upstream
 module.exports = {searchMatcher, timeMatcher};
-=======
+
 let timeMatcher = function(){
   matchSuccesses = [];
   $.ajax({
