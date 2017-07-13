@@ -41,3 +41,5 @@ function loadInfoByClick(whichArea){
         });
     });
 }
+
+module.exports = {loadInfoByTime, loadInfoByClick};
