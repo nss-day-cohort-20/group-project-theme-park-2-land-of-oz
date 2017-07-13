@@ -48,12 +48,3 @@ let timeMatcher = function(){
 };
 
 module.exports = {searchMatcher, timeMatcher};
-
-
-
-
-//  3 functions total.
-//  searchMatcher needs to highlight are to match the search criteria,
-//  timeMatcher, returns an array of objects that match the time criteria
-//  areaMatcher that returns an array of objects that meet the clicked criteria
-//
