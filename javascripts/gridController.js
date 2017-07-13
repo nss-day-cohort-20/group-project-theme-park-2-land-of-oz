@@ -15,13 +15,11 @@ let focusGrid = function() {
 		searchResults.forEach( function(id){
 			var attractionId = id.area_id;
 			var $areaConcat = "area" + attractionId;
-			console.log($areaConcat);
 			$('#' + $areaConcat).addClass("hvr-bob");
-			console.log("chris", id.area_id);
 		});});
 };
 
-focusGrid();
+module.exports = {focusGrid};
 
 
 //gridController will call accordianFactory.getattractions
