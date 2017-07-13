@@ -18,3 +18,9 @@ searchButton.click(function(){
 	console.log("search button", searchButton);
 	console.log("search master", matched);
 });
+
+var testButton = $("#timeSubmit");
+testButton.click(function(){
+	let matched = search.timeMatcher();
+	return matched;
+});
