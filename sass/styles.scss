@@ -61,6 +61,11 @@ padding-left: 12%;
                   Info Pane
 *********************************************/
 
+.footer {
+	text-align: center;
+	margin: 0 auto;
+}
+
 .infoPane {
 	border-right: 3px solid #bb6a8f;
 	min-height: 400px;
@@ -159,3 +164,5 @@ a:focus, a:hover {
 	transform: translate(-50%, -50%);
 	padding-bottom: 20%;
 }
+
+
