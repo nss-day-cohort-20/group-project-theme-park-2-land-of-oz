@@ -20,8 +20,8 @@ function loadInfoByTime() {
                         });
                     });
                     searchResultAttractions.forEach((attraction) => {
-                        if (attraction.times === undefined) {
-                            attraction.times = {"operatingHours" : `Open 9:00 AM to 10:00 PM`};
+                        if (attraction.times === false) {
+                            attraction.times = `Open 9:00 AM to 10:00 PM`;
                         }
                     });
                 });
