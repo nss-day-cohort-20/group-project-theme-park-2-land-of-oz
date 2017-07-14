@@ -4,11 +4,15 @@ let $ = require('jquery');
 let search = require('./search.js');
 let getAttractions = require('./accordianFactory.js');
 
-let focusGrid = function() {
+function clearClasses() {
 	for (var i=1; i<8; i++) {
 		var $areaRemoveConcat = "area" + i;
 		$('#' + $areaRemoveConcat).removeClass("hvr-bob");
 	}
+}
+
+let focusGrid = function() {
+	clearClasses();
 	getAttractions.getAttractions()
 	.then((attractions)=>{
 		let searchResults = search.searchMatcher(attractions);
@@ -19,7 +23,7 @@ let focusGrid = function() {
 		});});
 };
 
-module.exports = {focusGrid};
+module.exports = {focusGrid, clearClasses};
 
 
 //gridController will call accordianFactory.getattractions

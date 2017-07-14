@@ -48,7 +48,7 @@ module.exports = {getAreas, getAttractions, getAttractionTypes, getParkInfo};
 
 
 
-// call attractionTypes 
+// call attractionTypes
 // 	AJAX CALL FOR ATTRACTION TYPES
 // 	attractions change baised on info from AT
 
@@ -57,10 +57,10 @@ module.exports = {getAreas, getAttractions, getAttractionTypes, getParkInfo};
 // // *DATA returned from attractionTypes gets own VAR
 // // for each attraction add type field then POST FB
 // // loop through attractions for every item loop through types with filter func- creats new array. returns 1 obj
-// // return obj whos id is the same as the type id in current attraction 
+// // return obj whos id is the same as the type id in current attraction
 // // make type ids equal to name
 
-// newAttractionArr is 
+// newAttractionArr is
 // function addType(attractions){
 // 	attractions.forEach( (attraction) => {
 // 		let newAttractionArr = attractionTypes.filter( (type) => {
