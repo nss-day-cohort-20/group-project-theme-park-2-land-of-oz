@@ -28,7 +28,8 @@ function loadInfoByTime(){
     });
 }
 
-function loadInfoByClick(whichArea){
+function loadInfoByClick(whichArea) {
+
     accordianFactory.getAttractions()
     .then((attractions)=>{
         let searchResultAttractions = search.areaMatcher(attractions, whichArea);
