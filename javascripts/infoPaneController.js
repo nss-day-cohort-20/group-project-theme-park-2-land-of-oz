@@ -27,7 +27,7 @@ function loadInfoByTime(){
         });
     });
 }
-
+console.log("who wants this dog?");
 function loadInfoByClick(whichArea) {
     accordianFactory.getAttractions()
         .then((attractions) => {
