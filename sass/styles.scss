@@ -2,6 +2,10 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+h3 {
+	color: #6abb6d;
+}
+
 /********************************************
                   Nav/Foot
 *********************************************/
@@ -77,7 +81,7 @@ padding-left: 12%;
 .infoPaneText {
 	padding-right: 30px;
 	margin-left: -20%;
-	max-height: 450px;
+	max-height: 425px;
 	overflow: scroll;
 	overflow-x: hidden;
 }
@@ -98,6 +102,8 @@ padding-left: 12%;
 }
 
 .panel-heading:hover h4{
+	width: 100%;
+	height: 100%;
 	color: white;
 }
 
@@ -123,6 +129,10 @@ a:focus, a:hover {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+}
+
+.panel-body {
+	text-align: center;
 }
 /********************************************
                   Area Grid
