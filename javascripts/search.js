@@ -17,44 +17,36 @@ let searchMatcher = function(data) {
             matchSuccesses.push(attraction);
         }
     });
-    console.log("successes", matchSuccesses);
     return matchSuccesses;
 };
 
 // pass in data
-let timeMatcher = function() {
-    // var timeResults;
-    accordian().then((attractionsData)=>{
+let timeMatcher = function(attraction) {
       matchSuccesses = [];
       var searchTime = document.getElementById("timeSubmission").value;
       searchTime = searchTime.replace(/\s/g, '');
-      console.log("attractionsData", attractionsData);
-      attractionsData.forEach(function(attraction){
+      attraction.forEach(function(attraction){
         if(attraction.times){
           attraction.times.forEach(function(time){
             if(time === searchTime){
-              console.log("attraction", attraction);
               matchSuccesses.push(attraction);
             }
           });
         }
       });
       console.log("mat", matchSuccesses);
-    });
-    
-
-
-
-
-    return matchSuccesses;
-};
+      return matchSuccesses;
+    };
 
 let areaMatcher = function(attractionsJson, area) {
     matchSuccesses = [];
-    if (attractionsJson.area.search() === area.id) {
-        matchSuccesses.push(area.name);
-
-    }
+    objArray = [];
+    objArray.push(attractionsJson);
+    objArray[0].forEach(function(attraction) {
+        if (attraction.area_id.toString().search(area) === -1) {} else {
+            matchSuccesses.push(attraction);
+        }
+    });
     return matchSuccesses;
 };
 

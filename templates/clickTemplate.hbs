@@ -1,5 +1,5 @@
 
-{{!-- {{#each attractions}}
+{{#each attraction}}
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 	<div class="panel panel-default">
 		<div class="panel-heading" role="tab" id="headingThree">
@@ -12,7 +12,7 @@
 		<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 			<div class="panel-body">
 				<h3>Description</h3>
-				<p>{{description}}
+				<p>{{description}}</p>
 					<h3>Time</h3>
 					{{#each times}}
 						<p>{{this}}</p>
@@ -20,4 +20,5 @@
 				</div>
 			</div>
 		</div>
-		{{/each}} --}}
+	</div>
+{{/each}}
