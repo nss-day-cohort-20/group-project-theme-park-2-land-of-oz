@@ -11,6 +11,7 @@ $("#timeSubmit").on("click", ()=>{
 $("#testText").keypress((e)=>{
     if(e.which == 13){
         gridController.focusGrid();
+
     }
 });
 
