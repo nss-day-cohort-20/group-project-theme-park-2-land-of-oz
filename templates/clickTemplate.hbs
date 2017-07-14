@@ -1,17 +1,18 @@
-{{#each attractions}}
-	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingThree">
-				<h4 class="panel-title">
-					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						<h4 class="accordianTitle">{{name}} ({{type}})</h4>
-					</a>
-				</h4>
-			</div>
-			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-				<div class="panel-body">
-					<h3>Description</h3>
-					<p>{{description}}
+
+{{!-- {{#each attractions}}
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingThree">
+			<h4 class="panel-title">
+				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					<h4 class="accordianTitle">{{name}} ({{type}})</h4>
+				</a>
+			</h4>
+		</div>
+		<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			<div class="panel-body">
+				<h3>Description</h3>
+				<p>{{description}}
 					<h3>Time</h3>
 					{{#each times}}
 						<p>{{this}}</p>
@@ -19,5 +20,4 @@
 				</div>
 			</div>
 		</div>
-	</div>
-{{/each}}
+		{{/each}} --}}

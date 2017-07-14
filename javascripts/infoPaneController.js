@@ -1,28 +1,45 @@
 'use strict';
 
-// let $ = require('jquery');
+let $ = require('jquery');
 let accordianFactory = require('./accordianFactory.js');
-let searchResult = require('./search.js');
+let search = require('./search.js');
+let builder = require('./templateBuilder.js');
+let $container = $('#infoPaneText');
 
-// give me burger
-accordianFactory.getParkInfo()
-// getting burger
-.then(function(parkInfo){
-    console.log("park info", parkInfo);
-});
+function loadInfoByTime(){
+    accordianFactory.getAttractions()
+    .then((attractions)=>{
+        let searchResultAttractions = search.timeMatcher(attractions);
+        accordianFactory.getAttractionTypes()
+        .then((attractionTypes)=>{
+            $(searchResultAttractions).each((attraction)=>{
+                $(attractionTypes).each((type)=>{
+                    if(type.id === attraction.type_Id){attraction.type = type.name;}
+                    }
+                );
+            });
+            let infoForPain = builder.makeInfoPane(searchResultAttractions);
+            $container.html(infoForPain);
+        });
+    });
+}
 
+function loadInfoByClick(whichArea){
+    accordianFactory.getAttractions()
+    .then((attractions)=>{
+        let searchResultAttractions = search.areaMatcher(attractions, whichArea);
+        accordianFactory.getAttractionTypes()
+        .then((attractionTypes)=>{
+            $(searchResultAttractions).each((attraction)=>{
+                $(attractionTypes).each((type)=>{
+                    if(type.id === attraction.type_Id){attraction.type = type.name;}
+                    }
+                );
+            });
+            let infoForPain = builder.makeInfoPane(searchResultAttractions);
+            $container.html(infoForPain);
+        });
+    });
+}
 
-accordianFactory.getAreas()
-.then(function (area){
-    console.log("area", area);
-});
-
-accordianFactory.getAttractionTypes()
-.then(function (attractionTypes){
-    console.log("attractionTypes", attractionTypes);
-});
-
-accordianFactory.getAttractions()
-.then(function (attractions){
-    console.log("attractions", attractions);
-});
+module.exports = {loadInfoByTime, loadInfoByClick};

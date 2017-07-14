@@ -53,6 +53,7 @@ let areaMatcher = function(attractionsJson, area) {
     matchSuccesses = [];
     if (attractionsJson.area.search() === area.id) {
         matchSuccesses.push(area.name);
+
     }
     return matchSuccesses;
 };
