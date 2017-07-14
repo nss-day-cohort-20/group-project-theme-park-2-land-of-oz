@@ -12,13 +12,17 @@ function loadInfoByTime(){
         let searchResultAttractions = search.timeMatcher(attractions);
         accordianFactory.getAttractionTypes()
         .then((attractionTypes)=>{
-            $(searchResultAttractions).each((attraction)=>{
-                $(attractionTypes).each((type)=>{
-                    if(type.id === attraction.type_Id){attraction.type = type.name;}
+            searchResultAttractions.forEach((attraction)=>{
+                attractionTypes.forEach((type)=>{
+                    // console.log("attractiontype", attraction.type_id);
+                    if(type.id === attraction.type_id){
+                        attraction.type = type.name;
                     }
-                );
+                });
             });
+            console.log("attractions", searchResultAttractions);
             let infoForPain = builder.makeInfoPane(searchResultAttractions);
+            console.log("info", infoForPain);
             $container.html(infoForPain);
         });
     });
@@ -30,11 +34,13 @@ function loadInfoByClick(whichArea){
         let searchResultAttractions = search.areaMatcher(attractions, whichArea);
         accordianFactory.getAttractionTypes()
         .then((attractionTypes)=>{
-            $(searchResultAttractions).each((attraction)=>{
-                $(attractionTypes).each((type)=>{
-                    if(type.id === attraction.type_Id){attraction.type = type.name;}
+            searchResultAttractions.forEach((attraction)=>{
+                attractionTypes.forEach((type)=>{
+                    // console.log("attractiontype", attraction.type_id);
+                    if(type.id === attraction.type_id){
+                        attraction.type = type.name;
                     }
-                );
+                });
             });
             let infoForPain = builder.makeInfoPane(searchResultAttractions);
             $container.html(infoForPain);
